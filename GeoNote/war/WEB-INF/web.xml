@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>es.upm.dit.isst.geonote.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>CheckContacts</servlet-name>
+		<servlet-class>es.upm.dit.isst.geonote.CheckContactsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckContacts</servlet-name>
+		<url-pattern>/checkContacts</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>CreateNote</servlet-name>
+		<servlet-class>es.upm.dit.isst.geonote.CreateNoteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateNote</servlet-name>
+		<url-pattern>/createNote</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetNotes</servlet-name>
+		<servlet-class>es.upm.dit.isst.geonote.GetNotesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetNotes</servlet-name>
+		<url-pattern>/getNotes</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>TestPush</servlet-name>
+		<servlet-class>es.upm.dit.isst.geonote.TestPushServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestPush</servlet-name>
+		<url-pattern>/testPush</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TestUser</servlet-name>
+		<servlet-class>es.upm.dit.isst.geonote.TestUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestUser</servlet-name>
+		<url-pattern>/testUser</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
